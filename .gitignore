@@ -1,5 +1,4 @@
 .env
-composer.json
 .vscode
 /node_modules
 /public/hot
