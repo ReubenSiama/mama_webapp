@@ -1,8 +1,6 @@
 .env
 .vscode
 /node_modules
-/public/hot
-/public/storage
 /storage/*.key
 
 /storage/framework/cache/data
@@ -24,7 +22,6 @@ npm-debug.log
 yarn-error.log
 favicon.ico
 manifets.json
-public
 robots.txt
 storage
 tests
