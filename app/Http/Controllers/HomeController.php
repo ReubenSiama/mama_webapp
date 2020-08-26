@@ -5619,7 +5619,7 @@ if(!$request->stage ){
             'points_earned_so_far'=>$points_earned_so_far,
             'points_subtracted'=>$points_subtracted,
             'total'=>$total,'grades'=>$grades,'grade'=>$grade
-        ]);
+       ]);
     }
     public function followup(Request $request){
         $today = date('Y-m-d');
@@ -6399,11 +6399,11 @@ $Wards = [];
         $ids = array();
         if($request->phNo )
         {
-            $details[0] = ContractorDetails::where('contractor_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->pluck('project_id');
-            $details[1] = ProcurementDetails::where('procurement_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->pluck('project_id');
-            $details[2] = SiteEngineerDetails::where('site_engineer_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->pluck('project_id');
-            $details[3] = ConsultantDetails::where('consultant_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->pluck('project_id');
-            $details[4] = OwnerDetails::where('owner_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->pluck('project_id');
+            $details[0] = ContractorDetails::where('contractor_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->orwhere('whatsapp',$request->phNo)->pluck('project_id');
+            $details[1] = ProcurementDetails::where('procurement_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->orwhere('whatsapp',$request->phNo)->pluck('project_id');
+            $details[2] = SiteEngineerDetails::where('site_engineer_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->orwhere('whatsapp',$request->phNo)->pluck('project_id');
+            $details[3] = ConsultantDetails::where('consultant_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->orwhere('whatsapp',$request->phNo)->pluck('project_id');
+            $details[4] = OwnerDetails::where('owner_contact_no',$request->phNo)->orwhere('project_id',$request->phNo)->orwhere('whatsapp',$request->phNo)->pluck('project_id');
              $details[5] = ProjectDetails::where('project_id',$request->phno)->orwhere('project_id',$request->phNo)->pluck('project_id');
             for($i = 0; $i < count($details); $i++){
                 for($j = 0; $j<count($details[$i]); $j++){

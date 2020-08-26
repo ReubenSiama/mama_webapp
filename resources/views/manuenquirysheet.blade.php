@@ -5,7 +5,6 @@
 @extends($ext)
 
 @section('content')
-
 <div class="">
 	<div class="col-md-12">
 		<div class="panel panel-primary">
@@ -31,7 +30,6 @@
 			</div>
 			<div class="panel-body" style="overflow-x: auto">
 			
-					
 			@if(Auth::user()->group_id == 1)
 				<form method="GET" action="{{ URL::to('/') }}/manuenquirysheet">
 			@elseif(Auth::user()->group_id == 17)
@@ -161,6 +159,7 @@
 							<th style="text-align: center">Edit</th>
 						</tr>
 					</thead>
+
 					<tbody>
 						<?php $pro=0; $con=0; $total=0; $sum=0; $sum1=0; $sum2=0; ?>
 						@foreach($enquiries as $enquiry)
@@ -789,3 +788,4 @@ $(document).ready(function(){
     }
 </script>
 @endsection
+

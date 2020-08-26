@@ -1489,11 +1489,12 @@ function mrdownloadpurchaseOrder(Request $request){
          $price->igstpercent = $request->i1;
          $price->edited = "No";
          $price->e_way_no=$e_way_no;
-          $price->invoicedate=$invoicedate;
+         $price->invoicedate=$invoicedate;
          $price->customer_gst = $request->customergst;
          $price->customer_name = $request->customer_name;
          $price->HSN = $request->HSN;
          $price->payment_mode = $mode;
+	 $price->sales_person_name = $request->sales_person;
          $price->save();
          
         

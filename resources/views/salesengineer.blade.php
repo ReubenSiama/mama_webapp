@@ -851,7 +851,7 @@ function dis(){
 
     if (document.getElementById("a").checked){
         document.getElementById('b').disabled=true;
-
+    }
 }
 
 </script>

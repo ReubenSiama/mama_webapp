@@ -24,7 +24,8 @@
         "steffjenl/laravel-azure-blob-storage": "^1.0",
         "stevebauman/location": "^3.0",
         "torann/geoip": "^1.0",
-        "tymon/jwt-auth": "^0.5.12"
+        "tymon/jwt-auth": "^0.5.12",
+        "voerro/laravel-visitor-tracker": "^1.2"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

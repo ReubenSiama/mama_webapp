@@ -180,6 +180,7 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Illuminate\Notifications\NotificationServiceProvider::class,
+	Voerro\Laravel\VisitorTracker\VisitorTrackerServiceProvider::class,
      
     ],
 
@@ -232,6 +233,7 @@ return [
          'Debugbar' => Barryvdh\Debugbar\Facade::class,
          'Notification' => Illuminate\Support\Facades\Notification::class,
            'Pusher' => Pusher\Pusher::class, 
+	'VisitStats' => Voerro\Laravel\VisitorTracker\Facades\VisitStats::class,
         
     ],
 

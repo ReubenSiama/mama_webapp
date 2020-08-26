@@ -1043,6 +1043,10 @@
                                               <label class=" alert-success pull-right" id="lblWord21{{$order->id}}"></label>
                                         </td>
                                     </tr>
+				    <tr>
+                                      <td>Sales Person Name :</td>
+                                      <td><input type="text" name="sales_person" id="sales_person"></td>
+                                    </tr>
                             </table>
                             <center>
                             <button class="btn btn-sm btn-success" style="text-align: center;" onclick="document.getElementById('sendMessage').submit()">Confirm</button></center>
@@ -1240,6 +1244,10 @@
                                               <input readonly id="amountwithgst1{{$order->id}}" type="text" name="gstamount" value="{{$price->amountwithgst}}">
                                               <label class=" alert-success pull-right" id="lblWord21{{$order->id}}"></label>
                                         </td>
+                                    </tr>
+				    <tr>
+                                      <td>Sales Person Name :</td>
+                                      <td><input type="text" name="sales_person" id="sales_person"></td>
                                     </tr>
                             </table>
                             <center>
@@ -1587,6 +1595,10 @@ document.getElementById('amountwithgst1'+arg).value = final;
                                               <label class=" alert-success pull-right" id="lblWord21{{$order->id}}"></label>
                                         </td>
                                     </tr>
+				    <tr>
+                                      <td>Sales Person Name :</td>
+                                      <td><input type="text" name="sales_person" id="sales_person"></td>
+                                    </tr>
                             </table>
                             <center>
                             <button class="btn btn-sm btn-success" style="text-align: center;" onclick="document.getElementById('sendMessage').submit()">Confirm</button></center>
@@ -1784,6 +1796,10 @@ document.getElementById('amountwithgst1'+arg).value = final;
                                               <input readonly id="amountwithgst1{{$order->id}}" type="text" name="gstamount" value="{{$price->amountwithgst}}">
                                               <label class=" alert-success pull-right" id="lblWord21{{$order->id}}"></label>
                                         </td>
+                                    </tr>
+				    <tr>
+                                      <td>Sales Person Name :</td>
+                                      <td><input type="text" name="sales_person" id="sales_person"></td>
                                     </tr>
                             </table>
                             <center>
@@ -2142,6 +2158,10 @@ document.getElementById('amountwithgst1'+arg).value = final;
                                               <input readonly id="amountwithgst{{$order->id}}" type="text" name="gstamount" value="{{$price->amountwithgst}}">
                                               <label class=" alert-success pull-right" id="lblWord2{{$order->id}}"></label>
                                         </td>
+                                    </tr>
+				    <tr>
+                                      <td>Sales Person Name :</td>
+                                      <td><input type="text" name="sales_person" id="sales_person"></td>
                                     </tr>
                             </table>
                             <center>

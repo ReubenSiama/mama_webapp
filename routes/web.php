@@ -852,3 +852,7 @@ Route::get('/customermap','HrController@customermap');
 Route::get('/customerprojects','HrController@customerprojects');
 Route::post('/customerdetailslist','HrController@customerdetailslist');
 Route::get('/customerlist','HrController@customerlist');
+
+// Tracking
+VisitStats::routes();
+Route::get('/tracking','TrackingController@getTracking');
